@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans:wght@100&display=swap');
+
+* /*Resetting all if the spacing and formating*/
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body /*Setting the body design and the font style*/
+{
+    background-color: #9fc6c4;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.wrapper
+{
+    margin-top: 40%; /*The margin size at the top */
+}
+
+.wrapper h2 /*styling the h1 journey tag*/
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.message
+{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.message .smallmessage
+{
+    background-color: #e93d3d;
+    margin: 10px;
+    margin: 10px;
+    width: 200px;
+}
+.message .middleworlds
+{
+    color: #c4c2c2;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+
+}
+p
+{
+    font-size: larger;
+}
+.message .smallmessage h2
+{
+   color: #c4c2c2;
+   font-size: 40px;
+   margin-top: 15px;
+}
