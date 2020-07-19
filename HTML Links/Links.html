@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Links</title>
+        <style>
+            body
+            {
+                border: 1px solid tomato;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: large;
+                color: tomato;
+                padding: 10px;
+            }
+            img
+            {
+                width: 20%;
+                height: 35%;
+                clear: both;
+            }
+            a:link
+            {
+                color: green;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a:visited 
+            {
+                color: pink;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a:hover
+            {
+                color: red;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a:active
+            {
+                color: yellow;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Links in HTML are hyper-links and they help us move from one document to another
+        <br> Links mostlt text but we can use images, vidoes or any-other HTMl element
+        </p> <hr>
+        <p id="textlink" title="Link tag">The HTML link tag uses the a tag also known as the anchor tag <br>
+        The anchor tag is followed by the href="Link address" then the text to be diplayed as the link <br>
+        Example below: <br>
+        <a href="https://www.postimees.ee/" target="_top">Postimees. </a> <br>
+        The example above is a type of link which uses a text format to display the link to the user. <br>
+        The displayed text is simpke indicating to the reader that this is a link to direct the reader to the redirect page. <br>
+        Another concept or attribute of a link is the <q>Target</q>. The target attribute tells the browser where to display the link. <br>
+        The possible values for the Link tag are:
+         <ul>
+            <li><strong>_self.</strong> Default. Opens the document in the same window/tab as it was clicked.</li>
+            <li><strong>_blank.</strong> Opens the document/ the link in a new window or tab.</li>
+            <li><strong>_parent</strong> Opens the document in the parent frame.</li>
+            <li><strong>_top</strong> Opens the document in the full body of the window.</li>
+        </ul> 
+        <p>This are the examples of the target attribute for a link: <br>
+        <a href="github.com" target="_self">Self Target. This would display the link on the same tab.</a> <br>
+        <a href="www.github.com" target="_blank">blant Target. This would dispaly the link in a new tab / window.</a> <br>
+        <a href="www.google.com" target="_parent">Parent Target. This would display the Link in the parent frame.</a> <br>
+        <a href="www.Paypal.com" target="_top">Top Target. This would display the link on the full body of the page.</a>
+        </p>
+        </p>
+        <hr>
+        <p title="Diffrence between Absolute link and relative link">Another concept of HTML links are the <q>Absolute</q> and the <q>Relative</q>
+        Link. The Diffrence is that the abosulte link is a <strong>complete URL</strong> pointing to another HTMl document, while a relative <br>
+        link is a <strong>Partial Link/URL</strong> pointing to a document within out HTML document / a file in our server or computer. <br>
+        Examples below:
+         <ul>
+             <li><a href="https://www.fbi.gov/wanted">This is a complete URL to FBI most wanted List. Otherwise an Abosolute URL</a></li>
+             <li><a href="..//HTML Basics/Basics..html">This is a link pointing to a document in my computer. Also known as a relative URL</a></li>
+         </ul>
+        </p>
+        <hr>
+        <p title="Images as links">It is also possible to use an image / video as a link to another page. You can do this by putting and img tag in the <br>
+            anchor tag. <br>
+            Example below: <br>
+            <a href="https://in.linkedin.com/in/ritacascia-ukachukwu-722856144" 
+             target="_blank"><img src="https://sunsetmediawave.files.wordpress.com/2014/11/2-1.gif" 
+                alt="Computer Programmer gif"></a>
+        </p>
+        <hr>
+        <p title="HTML mailto function">Another concept of a link if the HTML mailto function. Using the featured allows the reader to click on the <br>
+        Link to send an email to the email address in the link. <br>
+        Example below: <br>
+        <a href="mailto:damilare.folorunso@arvato.com">Send email</a>
+        </p>
+        <hr>
+        <p title="Button as a link">Another concept of the link is using a button as a link to another HTMl document. With the help of a JavaScript <br>
+        code we can use a button as a link so when the reader presses on the button the JS function would be performed. <br>
+        Example below: <br>
+        <button onclick="document.location='HMTL_CSS.html'">Test Button</button>
+
+        </p>
+    </body>
+</html>
