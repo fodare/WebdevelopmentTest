@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Images</title>
+        <style>
+            body
+            {
+                border: 2px solid tomato;
+                padding: 3px;
+                font-family:'Courier New', Courier, monospace;
+                background-image:url("https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=60");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                font-size: large;
+                color: black;
+            }
+            img
+            {
+                width: 300px;
+                height: 300px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <p title="HTML img tag">HTML images are used to style and make our HTML webpages more presentable to our visitor's or the reader. <br>
+            Below is an example of HTML images. <br>
+            <img width="250px" height="300px" src="https://img.devrant.com/devrant/rant/r_1752763_tDRWe.jpg" alt="Gunny Developer"> <br>
+            images are not technically inserted into wed pages. They are just basically linked to the HTML document. There are 2 most <br>
+            important attributes of an img tag, they are namely: <br>
+            <ul>
+                <li>src - Source of the image. Either online or in a local directory.</li>
+                <li>alt - alternative to specify the name of the image if for some reason the browser can not display the image</li>
+            </ul>
+            <hr>
+            It is also possbile to use animinated images such as gif in our HTML. We simply just give the link to the gif in the src <br>
+            attribute. Example below: <br>
+            <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fdevhumor.com%2Fcontent%2Fuploads%2Fimages%2FFebruary2016%2Fclient-programmer-animation.gif&f=1&nofb=1" 
+            alt="CSS faustration">
+            <hr>
+            Another concept of the Image tag in HTML is the image map. Image map generally creates clickable areas on our image. Using the area tag and the
+            use-map attribute we can make this happen<br>
+            This happen. To read more of the image map please go to the link <a href="https://www.w3schools.com/html/html_images_imagemap.asp">Image map</a>
+            <hr>
+            Another concept in HTML images is the background image elements. The backgroundimage is used to cover the background of the HTMl document instead of using <br>
+            plain colors. The background image can be styled in many ways and with the CSS style property, we can style our images better. Example is the background
+            image of this document.
+            <hr>
+            Another concept is the picture tag, using this tag we can control the image displayed on diffrent types of devices. As devices generally do not have the <br>
+            same resolution the way image are displayed might be diffrent. Example below:
+            <picture>
+                <source media="(min-width: 650px)" srcset="https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=60">
+                <source media="(min-width: 465px)" srcset="https://images.unsplash.com/photo-1533224188-15046082249f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=60">
+                    <img src="https://images.unsplash.com/photo-1524293568345-75d62c3664f7?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=60" style="width: auto;">
+            </picture>
+
+
+        </p>
+    </body>
+</html>
