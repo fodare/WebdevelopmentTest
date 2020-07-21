@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Tables</title>
+        <style>
+            body
+            {
+                border: 1px solid tomato;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: large;
+            }
+            table
+            {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                width: 60%;
+                border-collapse: collapse;
+                border-spacing: 10px;
+            }
+            td, th
+            {
+                text-align: left ;
+                padding: 6px;
+                border: 1px solid whitesmoke;
+            }
+            tr:nth-child(even)
+            {
+                background-color: #dddddd;
+            }
+            tr:nth-child(odd)
+            {
+                background-color:whitesmoke;
+            }
+            caption
+            {
+                font-family: sans-serif;
+                font-size: large;
+                color: purple;
+            }
+        </style>
+    </head>
+    <body>
+        <p title="HTML Tables">
+            HTML tables allows the web developers to arrange data into Rows and colums and they can be designed in many ways. Example below
+            <table>
+                <caption>Cassie & Dare</caption>
+                <tr>
+                    <th>Company</th>
+                    <th>Contact Person</th>
+                    <th>Country</th>
+                </tr>
+
+                <tr>
+                    <td>Folu Gropu INT.</td>
+                    <td>Olumide Folorunso</td>
+                    <td>Nigeria</td>
+                </tr>
+                <tr>
+                    <td>Abila Trading Store</td>
+                    <td>Mrs Atinuke</td>
+                    <td>Nigeria</td>
+                </tr>
+                <tr>
+                    <td>Gaming Store</td>
+                    <td>Mark In</td>
+                    <td>Estonia</td>
+                </tr>
+                <tr>
+                    <td>Ops Team(Muster)</td>
+                    <td>Christoff</td>
+                    <td>Germany</td>
+                </tr>
+            </table> <br>
+            The border collapse property makes the table border one i.e unify the table border, so individual data in the table do not have a single border
+            of it's own like the one above.
+            <hr>
+            Another Form of the Table design is the Table span values. when we have rows and colums that span multiple size, we can use the span elements with
+            the HTML document. Examples below: 
+            <br>colum span using the colspan attribute.
+            <table style="width: 60%;margin-top: 4px;">
+                <caption>Cassie & Dare</caption>
+                <th>Name</th>
+                <th>Contact</th>
+                <th colspan="2">Address</th>
+
+                <tr>
+                    <td>Damilare</td>
+                    <td>Email</td>
+                    <td>Liimi, Tallinn</td>
+                    <td>Estonia</td>
+                </tr>
+                <tr>
+                    <td>Cassie</td>
+                    <td>Email</td>
+                    <td>Coloaba, Mumbai</td>
+                    <td>India</td>
+                </tr>
+            </table>
+            <hr>
+            A table with the rowspan attribute:
+            <table style="width: 60%;">
+                <Caption>Cassie and Dare</Caption>
+                <tr>
+                    <th>Name</th>
+                    <td>Damilare</td>
+                </tr>
+                <tr>
+                    <th rowspan="3">Cassie</th>
+                    <td>Church gate, Colaba</td>
+                </tr>
+                <tr><td>P.O.box 12367</td></tr>
+                <tr><td>India</td></tr>
+                
+            </table>
+
+
+        </p>
+    </body>
+</html>
