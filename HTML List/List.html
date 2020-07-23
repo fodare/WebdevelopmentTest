@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML List</title>
+        <style>
+            body
+            {
+                font-family: monospace;
+            }
+            table
+            {
+                border: 0.01px solid gray;
+                width: 60%;
+                border-spacing: 3px;
+                text-align: left;
+            }
+            th, td
+            {
+                padding: 1px;
+                border: 1px solid whitesmoke;
+                border-collapse: collapse;
+               
+            }
+            tr:nth-child(even)
+            {
+                background-color: #dddddd;
+            }
+            tr:nth-child(odd)
+            {
+                background-color: #ffffff;
+            }
+            #cir
+            {
+                list-style-type: circle;
+            }
+            #squ
+            {
+                list-style-type: square;
+            }
+            #non
+            {
+                list-style-type: none;
+            }
+        </style>
+    </head>
+    <body style="border: 1px solid tomato;">
+        <p title="HTML List tag">HTML helps web developers group set of elements / items into a list. There are generally 2 types of list. <br>
+            They are namely
+            <ol>
+                <li>Ordered List</li>
+                <li>Un-Ordered list</li>
+            </ol>
+        Another example is : 
+            <ul>
+                <li>Ordered list</li>
+                <li>Un-Order list</li>
+            </ul>
+
+        As the name implies the, Un-ordered list would list the items in no specific form and would display the items in the list with a
+        a bullet point at the beginning. The bullet point starts with a dark circle by default. <br>
+
+        An ordered list would display the items in the list in a chronological orde, and usally marked in numbers by default. <br>
+        <hr>
+        Another concept of the HTML list is the description list. The description list is a type of HTML description list that is use
+        to describe the item of the list, basically describing the item in the list, we can do this by using the dl tag and then
+        the dt and dd tag inside the dl tag. The dl tag is used to start the list, the dt tag is used to give a name of the list
+        and the dd tag is used to add description to the of the list. Example below: 
+        <dl style="padding: 7px; margin-left: 5px; border: 1px solid tomato;box-sizing: content-box; margin-right: 400px;">
+            <dt>Damilare</dt>
+            <dd>Author's name</dd>
+            <dt>Male</dt>
+            <dd>Autho's Sex</dd>
+            <dt>Estonia</dt>
+            <dd>Author's country</dd>
+        </dl>
+        <hr>
+        Tho by default, the display type of the Un-ordered list is the bullet point. It's also possible to style this order using CSS.
+        There are 4 types of list style we can use to design un-orded list. Please see  table below:
+        <table>
+            <th>Value</th>
+            <th>Description</th>
+            <tr>
+                <td>Disc</td><td>Sets the list item marker to a bullet (default)</td>
+            </tr>
+            <tr>
+                <td>Circle</td><td>Sets the list item marker to a circle</td>
+            </tr>
+            <tr>
+                <td>Square</td><td>Sets th list item marker to a square</td>
+            </tr>
+            <tr>
+                <td>None </td><td>The list items will not be marked</td>
+            </tr>
+        </table>
+
+        <ul>
+            <li>Disk (default)</li>
+            <li id="cir">Circle</li>
+            <li id="squ">Square</li>
+            <li id="non">None</li>
+        </ul>
+        <hr>
+        Another concept in a list is that, we can nest a list. That is a list inside another list. An example below:
+        <ul>
+            <li>Damilare</li>
+            <ul>
+                <li>Male</li>
+                <li>African</li>
+                <li>6.8 Foot tall.</li>
+            </ul>
+            <li>Closing the list</li>
+        </ul>
+        It is also possible for the li tag to hold other values such as a image fiels and many more.
+        </p>
+    </body>
+</html>
