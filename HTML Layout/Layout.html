@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Layout</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width,initial-scale=1">
+        <Style>
+            *{
+                box-sizing: border-box;
+            }
+            body
+            {
+                font-family: monospace;
+                font-size: large;
+            }
+            /*Header style*/
+            header
+            {
+                background-color: #666;
+                padding: 20px;
+                text-align: center;
+                color: white;
+                font-size: 35px;
+            }
+            nav
+            {
+                float: left;
+                background-color:#ccc ;
+                height: 300px;
+                width: 30%;
+                padding: 10px;
+            }
+            nav ul
+            {
+                list-style-type: none;
+                padding: 10px;
+                font-size: larger;
+                display: block;
+            }
+            article
+            {
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color:#f1f1f1;
+                height:300px;
+            }
+            section::after
+            {
+                content: " ";
+                display: table;
+                clear: both;
+            }
+
+            footer
+            {
+                text-align: center;
+                font-size: 35px;
+                color: white;
+                background-color: #777;
+                padding: 10px;
+                clear: both;
+            }
+            /*Making the layout responsive to the diffrent type of screen size*/
+            @media(max-width: 600px)
+            {
+                nav,article
+                {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            img
+            {
+                width: 100px;
+                height: 90px;
+                float: right;
+                clear: both;
+            }
+        </Style>
+    </head>
+    <body>
+        <p>
+            In this example, i have created a header, two columns/boxes and a footer. On smaller screens, the columns will be stacked
+            on-top of eachother.
+        </p>
+        <p>
+            Do try to resize the browser window to see the responsive effect.(Make the broswer smaller / bigger and see how the columns
+            react)
+        </p>
+        <header>
+            <h2>Cities</h2>
+        </header>
+
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#">London</a></li>
+                    <li><a href="#">Paris</a></li>
+                    <li><a href="#">Tokyo</a></li>
+                </ul>
+            </nav>
+            <article>
+                <p>
+                    <h1>London</h1>
+                </p>
+                <p>
+                    London is the captial of England. It is the most populous country in the United Kingdom, with the metropolitan area
+                    of over 13 billion inhabitants
+                </p>
+                <p>Standing on the River Thames, Lodonhas been a major settlement for two millennia, it's history going back to it's
+                    founding by the Romans, who named it Londinium.
+                </p>
+            </article>
+        </section>
+        <footer>
+            <p>Footer</p>
+            <img id="git" src="http://shijuvarghese.com/wp-content/uploads/2018/03/git-logo.png" alt="Github">
+        </footer>
+    </body>
+</html>
