@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shor Nav</title>
+        <style>
+            body
+            {
+                font-family: monospace;
+                font-size: large;
+                border: 0.001px solid tomato;
+            }
+            li a
+            {
+                display: block;
+                text-decoration: none;
+                color: white;
+                padding: 7px;
+                text-align: center;
+            }
+            ul
+            {
+                margin: 0;
+                padding: 0;
+                background-color: darkgray;
+                overflow: hidden;
+                list-style-type: none;
+            }
+            li
+            {
+                float: left;
+            }
+            li a:hover
+            {
+                background-color: black;
+            }
+            table
+            {
+                border: 0.5px solid black;
+                text-align: left;
+                border-collapse: collapse;
+            }
+            td
+            {
+                border: 0.5px solid black;
+            }
+            tr th
+            {
+                border: 0.5px solid black;
+            }
+            table tr:nth-child(odd)
+            {
+                background-color: white;
+            }
+            table tr:nth-child(even)
+            {
+                background-color: lightgray;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="About us">About Us</a></li>
+            <li><a href="Contact">Contact Us</a></li>
+            <li><a href="Explore">Explore</a></li>
+        </ul>
+        <p>
+            Damilare is testing his knowledge of making a simple navigation bar. There are gnerally two types of list and they can be styled 
+            in many ways. One way is the use of the Un-ordered list to make the Navigation bar. By default, the ordered list start counting down
+            from 1 but we can however change this style using the CSS Property. 
+        </p>
+
+        <p>
+            There are 5 types of the ordered list type attribute. That is 5 diffrent ways we can design an ordered list and the table below contains 
+            the 5 possible types:
+        </p>
+        <table>
+            <th>Type</th>
+            <th>Description</th>
+            <tr>
+                <td>type="1"</td>
+                <td>The list items will be numbered with numbers (default)</td>
+            </tr>
+            <tr>
+                <td>type="A"</td>
+                <td>The list will be numbered with uppercase letteres</td>
+            </tr>
+            <tr>
+                <td>type="a"</td>
+                <td>The list items will be numbered with lowercase letters</td>
+            </tr>
+            <tr>
+                <td>type="I"</td><td>The list will be numbered with usppercas roman numbers</td>
+            </tr>
+            <tr>
+                <td>type="i"</td><td>The list will be numbered with lowercase roman numbers</td>
+            </tr>
+        </table>
+        <hr>
+        <p>
+            An example of the typ 1 is as below:
+            <ol type="1">
+                <li>Coffee</li><br>
+                <li>Milk</li> <br>
+                <li>Sugar</li>
+            </ol>
+        </p><br>
+        <hr>
+        <p>
+            An example of the type A is as below:
+            <ol type="A">
+                <li>Name</li><br>
+                <li>Address</li><br>
+                <li>Orintation</li><br>
+            </ol>
+        </p>
+        <hr>
+        <p>
+            Another type is the type I. For displaying the list in uppercase roman numbers :
+            <ol type="I">
+                <li>Occupation</li><br>
+                <li>Skill-Level</li><br>
+                <li>Years of Experiance</li>
+            </ol>
+            And so the type goes on. All ewe have to do is simply specify the type of list we want.
+        </p>
+        <hr>
+        <p><h2>Control List counting</h2></p>
+        <p>
+            This is anotter concept of the HTML list design. By default, HTML orderd list start counting down from 1 to whatever, but if we 
+            want to start counting from a specific list we can use the start Property in the tag  element then specify the number to start
+            xounting  down from like the one show below:
+            <ol start="20">
+                <li>Location</li><br>
+                <li>Door Number</li><br>
+                <li>Available time</li><br>
+
+            </ol>
+        </p>
+       
+
+    </body>
+</html>
