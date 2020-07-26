@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Change</title>
+    </head>
+    <body>
+        <p>We can also change the image to be displayed when the screen size shrinks or changes. To do this we use the picture tag and give
+            it list if images to display based on the size of the screen.
+        </p>
+        <picture>
+            <source srcset="https://www.w3schools.com/html/img_smallflower.jpg" media="(max-width:600px)">
+            <source srcset="https://www.w3schools.com/html/img_girl.jpg" media="(max-width:1500px)">
+            <source srcset="https://www.w3schools.com/html/img_smallflower.jpg">
+                <img src="https://www.w3schools.com/html/img_smallflower.jpg" alt="Flowers" style="width: auto;">
+        </picture>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Media Queries</title>
+        <style>
+            *
+            {
+                box-sizing: border-box;
+            }
+            body
+            {
+                font-family: monospace;
+            }
+            .left
+            {
+                float: left;
+                background-color: lightblue;
+                padding: 7px;
+                width: 20%;
+                text-align: center;
+                font-size: large;
+            }
+            .main
+            {
+                float: left;
+                background-color: lightgray;
+                padding:7px;
+                width: 60%;
+                font-size: large;
+                text-align: center;
+            }
+            .right
+            {
+                background-color: lightgreen;
+                padding:7px;
+                float: left;
+                width: 20%;
+                font-size: large;
+                text-align: center;
+            }
+            @media screen and (max-width:800px)
+            {
+                .left, .main, .right
+                {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            Media queries can also be used to define the design for diffrent screen size and responsivness of a web page.
+            Developers generally define the maximum size of the screen and based on that the web-page would adjust accordingly.
+        </p>
+        <div class="left">
+            <p>Left Menu</p>
+        </div>
+
+        <div class="main">
+            <p>Main Menu</p>
+        </div>
+
+        <div class="right">
+            <p>Right Menu</p>
+        </div>
+    </body>
+</html>
