@@ -1,0 +1,75 @@
+.bigName
+{
+    color: #d3edee;
+    font: bold;
+    text-align: left;
+    padding-left: 5%;
+    background: white;
+    font-size: 30px;
+    font: bold;
+    list-style-type: none;
+    width: 40%;
+}
+ul
+{
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+li
+{
+    float: left;
+}
+li a
+{
+    text-decoration: none;
+    color:gray ;
+    display: block;
+    padding: 10px;
+}
+.lis
+{
+    padding: 10px;
+    text-align: center;
+    padding-left: 0;
+    width:10% ;
+    margin-left: 20px;
+    margin-right: 0;
+}
+li a:hover
+{
+    background-color: lightgray;
+}
+
+.gallery
+{
+    float: left;
+    margin-top: 40px;
+    width: 32%;
+}
+.imager
+{
+    float: left;
+    margin-top: 70px;
+}
+.message
+{
+    float: left;
+    width: 60%;
+}
+.messagebody
+{
+    margin-top: 70px;
+    
+}
+#piggbank
+{
+    color: #d3edee;
+}
+p
+{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
