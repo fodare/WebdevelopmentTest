@@ -73,3 +73,39 @@ p
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
 }
+table
+{
+    width: 60%;
+    font-size: large;
+    border-collapse: collapse;
+    background-color: white;
+}
+th
+{
+    text-align: left;
+    border: 1px solid black;
+
+}
+td
+{
+    border: 1px solid black;
+}
+.imp
+{
+    font-size: larger;
+    text-align: center;
+}
+
+table tr:nth-child(odd)
+{
+    background-color:whitesmoke;
+}
+table tr:nth-child(even)
+{
+    background-color: lightgray;
+}
+
+form
+{
+    padding-left: 7px;
+}
