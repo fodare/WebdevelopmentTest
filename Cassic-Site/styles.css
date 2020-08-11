@@ -54,7 +54,7 @@ body
     {
         float: left;
         margin-right: 200px;
-        width: 40%;
+        width: auto;
 
     }
 .in-message
@@ -95,4 +95,16 @@ body
 .links td
     {
         padding:30px;
+    }
+
+/*********** Media Query *********/
+/**** Media query to add breakpoint at 100% *********/
+
+@media screen and (max-width:800px)
+    {
+        .Cassie-image, .message
+            {
+                width: 100%;
+/* The width is 100%, when the viewport is 800px or smaller */
+            }
     }
