@@ -5,6 +5,7 @@ body
         color: #40514E;
         font-family: "Merriweather", serif;
         text-align: center;
+        line-height: 2;
         
     }
 
@@ -29,6 +30,30 @@ hr
         border-bottom: none;
         width: 40%;
         margin: 10px auto 20px auto;
+    }
+
+table
+    {
+        background-color: transparent;
+        margin-top: 40px;
+        text-align: left;
+    }
+
+td
+    {
+        border: transparent 4px solid;
+    }
+
+p
+    {
+        font-size: large;
+    }
+
+footer
+    {
+        background-color: #EAF6F6;
+        padding: 10px;
+        margin-top: 20px;
     }
 /************** Classes *********************/
 
@@ -75,3 +100,40 @@ hr
     {
         color: black;
     }
+
+.left-table
+    {
+        padding-left: 40%;
+    }
+
+.footer-links
+    {
+        padding: 10px;
+    }
+
+.btn {
+        background: #11cdd4;
+        background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+        background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+        background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+        background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+        background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+        -webkit-border-radius: 8;
+        -moz-border-radius: 8;
+        border-radius: 8px;
+        font-family: 'Montserrat', sans-serif;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+      }
+      
+      .btn:hover {
+        background: #30e3cb;
+        background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+        background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+        background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+        background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+        background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+        text-decoration: none;
+      }
