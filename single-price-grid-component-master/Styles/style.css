@@ -1,0 +1,97 @@
+/* Body */
+body {
+	font-family: "Karla", sans-serif;
+	background-color: lightblue;
+}
+/* Join our community */
+#Single-Price {
+	position: relative;
+	margin-right: 30%;
+	margin-left: 30%;
+	margin-top: 10%;
+	width: 40%;
+}
+
+.first-div {
+	background-color: white;
+	text-align: left;
+	padding: 30px;
+	padding-left: 40px;
+}
+.big-call {
+	color: hsl(179, 62%, 43%);
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+.hassle-free {
+	color: hsl(71, 73%, 54%);
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.first-div-message {
+	color: hsl(204, 43%, 80%);
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+/* Monthly  Subscription Area */
+.Monthly {
+	background-color: hsl(179, 62%, 43%);
+	color: #fff;
+	padding-left: 40px;
+	padding-top: 30px;
+}
+.Monthly-price-message {
+	font-size: 2rem;
+	font-weight: bold;
+}
+.price {
+	font-size: 2.3rem;
+	font-weight: bold;
+}
+td {
+	border: 6px solid transparent;
+}
+.Monthly-message {
+	font-size: 1.3rem;
+	font-weight: lighter;
+}
+.sign-up-button {
+	background-color: hsl(71, 73%, 54%);
+	width: 70%;
+	padding: 5px;
+	color: #fff;
+	font-size: 1.3rem;
+	font-family: "Karla", sans-serif;
+	margin-top: 20px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+/* Why Us area */
+.Why-Us {
+	background-color: hsl(179, 62%, 49%);
+	color: #fff;
+	padding-top: 30px;
+}
+.why {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding-left: 7px;
+}
+.why-message {
+	font-size: 1rem;
+	font-weight: lighter;
+	padding-left: 7px;
+}
+
+/* Footer styling */
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	margin-top: 10px;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
