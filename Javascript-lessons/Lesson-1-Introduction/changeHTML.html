@@ -78,5 +78,56 @@
 		>
 			Click to show Text
 		</button>
+		<hr />
+		<h2>JavaScript Output</h2>
+		JavaScript can produce / display output in 4 general forms, namely:
+		<ul>
+			<li>Writting into an HTML element using the innerHTML method</li>
+			<li>Writting into the HTML output using the document.write() method</li>
+			<li>Writting into and alert box, using Window.alert() method</li>
+			<li>Writting into the browser console, using console.log() method</li>
+		</ul>
+		<p>Example of using innerHTML method below:</p>
+		<p id="test1">Click the button below to change my text</p>
+		<button
+			type="button"
+			onclick="document.getElementById('test1').innerHTML = 'You have changed the text above'"
+		>
+			innerHTML Method
+		</button>
+		<p>Example of using document.write() method</p>
+		<p id="test2">5 + 6 =</p>
+		<button type="button" onclick="document.write('11')">
+			Document.write() method
+		</button>
+		<p>
+			The problem with this methos is that any existing html page / document
+			would be deleted(Not frm your computer) and the new page remains. <br />
+			ie the current html page get replaced by the new document.wite() element.
+			The document.write method show only be used for testing.
+		</p>
+		<p>Example of using the Window.alert() method</p>
+		<p>
+			The window.alert() method would pop up a window in the browser to dispaly
+			values/ data. Example below
+		</p>
+		<p id="test3">Sum 3 + 4 =</p>
+		<button type="button" onclick="window.alert(3 + 4)">
+			Window.alert() method
+		</button>
+		<p>
+			It is also possible to use the console.log() Method. This method is
+			generally used for debugging purposes. <br />
+			using console.log() would write to the browsers log for developpers to
+			view the data passed.
+		</p>
+		<p>
+			Another Form of output is window.print() method. this method helps to
+			print the HTML page <br />
+			as a file for the external printer to print out or save to our computer's
+			memory. Example is this button.
+		</p>
+		<button type="print" onclick="window.print()">Print the page</button>
+		<hr />
 	</body>
 </html>
