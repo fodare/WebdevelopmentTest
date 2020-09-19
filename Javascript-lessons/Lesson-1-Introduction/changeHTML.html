@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body
+		style="border: 1px solid tomato; font-family: monospace; text-align: center"
+	>
+		<h1 style="text-align: center">What can JavaScript do</h1>
+		<hr />
+		<h2 id="demo">JavaScript can change HTML content</h2>
+		<button
+			type="button"
+			onclick="document.getElementById('demo').innerHTML = 'Welcome to JavaScript'"
+		>
+			click me
+		</button>
+		<p>
+			JavaScript to change the html element in a page with the getElementById
+			method
+		</p>
+		<hr />
+		<h2>Change the Src of and image tag</h2>
+		<p>
+			JavaScript can also change the source value of an image in the img tag, so
+			substitute one image for the other in the src attribute of the html
+			element. Examplae below.
+		</p>
+		<button
+			type="button"
+			onclick="document.getElementById('img-bulb').src = 'Images/bulboff.png'"
+		>
+			Turn of the Light
+		</button>
+		<img
+			id="img-bulb"
+			src="Images/bulboff.png"
+			alt="imge of a bulb"
+			style="width: 100px"
+		/>
+		<button
+			type="button"
+			onclick="document.getElementById('img-bulb').src = 'Images/bulbOn.jpeg'"
+		>
+			Turn on the light
+		</button>
+		<hr />
+		<h2>Change the style of and HTML element</h2>
+		<p>
+			JavaScript Can also change the CSS style of an HTMl element. Example below
+			use a button to change the color of the paragraph below.
+		</p>
+		<p id="color-Change">Hello what is your name.</p>
+		<button
+			type="button"
+			onclick="document.getElementById('color-Change').style.color='Green'"
+		>
+			Change text color
+		</button>
+		<hr />
+		<h2>Hide and Show HTML element</h2>
+		<p>
+			JavaScript can help hide and show some html element on our page using the
+			dispaly attribute of the HTML element. Example below
+		</p>
+		<p id="hidden-part">Click the button below to hide.</p>
+		<button
+			type="button"
+			onclick="document.getElementById('hidden-part').style.display = 'none'"
+		>
+			Click to Hide
+		</button>
+		<button
+			type="button"
+			onclick="document.getElementById('hidden-part').style.display = 'block'"
+		>
+			Click to show Text
+		</button>
+	</body>
+</html>
