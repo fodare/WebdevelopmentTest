@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Function</title>
+  </head>
+  <body
+    style="border: 1px solid tomato; text-align: center; font-family: monospace"
+  >
+    <h2>JavaScript Function</h2>
+    <p>
+      A function in JavaScript is a group of JavaScript statement to perfrom a
+      specific purpose. <br />
+      The Syntax is as such : function fuctionName () { <br />
+      } <br />
+      The list of statements / commands are entered into the curly brasses.
+      example of a function is below:
+    </p>
+    <p id="test1"></p>
+    <script>
+      function multipyNumbers(value1, value2) {
+        var value1 = prompt('Enter the first value');
+        var value2 = prompt('Enter the  second value');
+        return value1 * value2;
+      }
+    </script>
+    <button
+      type="button"
+      onclick="document.getElementById('test1').innerHTML = multipyNumbers(12,3); "
+    >
+      Multiply Values
+    </button>
+    <hr />
+    <p>
+      This is an example of a function that convert from Fahrenheit to Celsius.
+      Click the button below.
+    </p>
+    <p id="test2"></p>
+    <script>
+      function toCelsius(userTemp) {
+        var userTemp = prompt('Enter the temperature in fahrenheit');
+        var convertedTemp = (5 / 9) * (userTemp - 32);
+        return convertedTemp;
+      }
+    </script>
+    <p>
+      <button
+        type="button"
+        onclick="document.getElementById('test2').innerHTML = toCelsius();"
+      >
+        From Fahrenheit to Celsius
+      </button>
+    </p>
+  </body>
+</html>
