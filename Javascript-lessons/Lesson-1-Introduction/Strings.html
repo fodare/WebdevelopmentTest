@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body
+		style="border: solid 1px tomato; font-family: monospace; text-align: center"
+	>
+		<h2>Javascript Strings</h2>
+		<p>
+			This is a collection of 0 or more characters in double quotations stored
+			in a container. Example below:
+		</p>
+		<p>var x = "Damilare is a boy</p>
+		<p id="test1"></p>
+		<script>
+			var x = "Damilare is a boy";
+		</script>
+		<button onclick="document.getElementById('test1').innerHTML = typeof(x)" ;>
+			Click to Get the Datatype of var x
+		</button>
+		<hr />
+		<h2>String Length</h2>
+		<p>
+			Another method of Javascript sting is the length of the string. If you
+			would like to get the <br />
+			Length of a given string tou can use the stringName.length method. <br />
+			It would return the length of the string. Example below:
+		</p>
+		<p id="test2"></p>
+		<script>
+			function getLength() {
+				var userInput = prompt("Please enter some words!");
+				var userAnswer = userInput.length;
+				return userAnswer;
+			}
+		</script>
+		<button onclick="document.getElementById('test2').innerHTML = getLength();">
+			Click to get the length of your input
+		</button>
+		<hr />
+		<h2>indexOf</h2>
+		<p>
+			Another example of a string method is find a string in a string. The
+			indexOf("characters we are looking for"); <br />
+			is another of sting method which helps find the position of a specific
+			sring in our string. Example below:
+		</p>
+		<p id="test3"></p>
+		<script>
+			function findIndex() {
+				var c = prompt('Enter some words witj "i" inside it');
+				var d = c.indexOf("i");
+				return d;
+			}
+		</script>
+		<button onclick="document.getElementById('test3').innerHTML = findIndex();">
+			Click to the index of i
+		</button>
+		<hr />
+		<h2>Extracting part of a String.</h2>
+    <p>There are 4 methods to extract part of a String. They are namely</p>
+    <p><ul>
+      <li>Slice(start, end)</li>
+      <li>substring(start, end)</li>
+      <li>substr(start, length)</li>
+    </ul></p>
+    <p>Example of the <strong>Slice() method</strong></p>
+    <p>var str = damilare; <br>
+      var secondContainer = str.slice(2,6); would return ? click button to find out
+    </p>
+    <script>
+      function extractString(){
+        var userName = "damilare";
+        var extractedValue = userName.slice(2,6);
+        return extractedValue;
+      }
+    </script>
+    <p id="test4"></p>
+    <button onclick="document.getElementById('test4').innerHTML = extractString();">Click to use Slice Method</button>
+    <hr>
+    <h2>String replace method</h2>
+    <p>Another string method is the string replacement method. The replace method would substitue a new value <br>
+    for a specified value. Example below: <br>
+    var string1 = "Damilare is a boy"; <br>
+    var string2 = string1.replace('boy','man');
+  </p>
+	</body>
+</html>
