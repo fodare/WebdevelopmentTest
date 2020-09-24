@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body
+		style="border: solid 1px tomato; font-family: monospace; text-align: center"
+	>
+		<h2>JavaScript Arrays</h2>
+		<p>
+			They are used to store multiple values in a single variable. Example is:
+			<br />var carNames = ["Mazda", "Bentley", "Honda", "Ford", "Toyota"];
+		</p>
+		<hr />
+		<h2>Creating an Array</h2>
+    <p>There are various methods to create an array.</p>
+    <p>
+      <ol>
+        <li>Method 1 : var arrayName = ["value1", "Value2", .....]</li>
+        <li>Method 2 : var cars = new Array("value1", "Value2", ....)</li>
+      </ol>
+    </p>
+    <p id="test1"></p>
+    <hr>
+    <h2>Accessing the Elements of an Array</h2>
+    <p>To access any value of an array. Use the index value of the array value / data. Like so
+    </p>
+    <p>var myNames = ["Damilare", "Olatunbosun", "Daniel"]</p>
+    <p>To access Olatunbosun : myNames[1]</p>
+    <p id="test2"></p>
+    <hr>
+    <h2>Changing an Array Element</h2>
+    <p>You can use the index value to access the value to be changed and then pass in the new value</p>
+    <p id="test3"></p>
+    <p id="test4"></p>
+    <script>
+      var carsModels = new Array("value1", "Value2")
+      var myNames = ["Damilare", "Olatunbosun", "Daniel"];
+      document.getElementById('test1').innerHTML = carsModels;
+      document.getElementById('test2').innerHTML = myNames[1];
+      var changeArray = ["Laptop", "Table", "Monitors", "Keyboards"];
+      changeArray[3] = "Keyboard";
+      document.getElementById('test3').innerHTML = "Var changeArray = [Laptop, Table, Monitors, Keyboards]"
+      document.getElementById('test4').innerHTML = changeArray;
+    </script>
+	</body>
+</html>
