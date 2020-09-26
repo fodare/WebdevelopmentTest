@@ -35,6 +35,28 @@
     <p>You can use the index value to access the value to be changed and then pass in the new value</p>
     <p id="test3"></p>
     <p id="test4"></p>
+    <p>Another form is to use the iindex vakue and then pass in another array value. <br>
+    Example below:
+    var cars = ["Saab", "Honda", "BMW"] <br>
+    cars[0] = "Opel"; <br>
+    Now, if you print variable car, you would get ["Opel","Honda", "BMW" ]
+  </p>
+  <hr>
+  <h2>Adding an Array </h2>
+  <p id="test5"></p>
+  <p>Use the Push () or length property Method.</p>
+  <hr>
+  <h2>Array to String Conversion</h2>
+  <p>To convert a JavaScript array to string use <br>
+    Method 1: toString() method. <br>
+    Method 2: join() mrhtod. The <strong>join()</strong> method works like the toString() method <br>
+    but allows us specify the type of the seprator we want use.
+   </p>
+   <hr>
+   <h2>concatenating /  Merging an Array</h2>
+	 <p>It's possible to merge 2 or more array means to form another array. <br> Example below:
+	 </p>
+	 <p id="test6"></p>
     <script>
       var carsModels = new Array("value1", "Value2")
       var myNames = ["Damilare", "Olatunbosun", "Daniel"];
@@ -44,6 +66,12 @@
       changeArray[3] = "Keyboard";
       document.getElementById('test3').innerHTML = "Var changeArray = [Laptop, Table, Monitors, Keyboards]"
       document.getElementById('test4').innerHTML = changeArray;
+      var workLife = ["Gym", "Food", "Entertainment", "Rest"];
+			document.getElementById('test5').innerHTML = workLife.length;
+			var myFemaleKids = ["Beth", "Meth", "Kate", "wine"];
+			var myMaleKids = ["John", "Ben", "Dave", "Tom"];
+			var myKids = myFemaleKids.concat(myMaleKids);
+			document.getElementById('test6').innerHTML = myKids;
     </script>
 	</body>
 </html>
