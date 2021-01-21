@@ -1,0 +1,5 @@
+API Name: News API
+Page: https://newsapi.org/?ref=apilist.fun
+End point:http://newsapi.org/v2/top-headlines?country=de&apikey=035eeec1dcf04686baf46df318753c67
+
+API_Key: 035eeec1dcf04686baf46df318753c67
