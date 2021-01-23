@@ -1,13 +1,18 @@
 body {
    margin: 0;
    box-sizing: border-box;
+   background-color: lightgray;
 }
 
 .heading {
    text-align: center;
-   padding-top: 100px;
+   padding-top: 150px;
 }
 .api-response {
    text-align: center;
    margin-top: 40px;
+}
+
+button {
+   margin-top: 20px;
 }

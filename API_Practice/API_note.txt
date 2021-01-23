@@ -1,5 +1,5 @@
-API Name: News API
-Page: https://newsapi.org/?ref=apilist.fun
-End point:http://newsapi.org/v2/top-headlines?country=de&apikey=035eeec1dcf04686baf46df318753c67
+API Name: Open Weather API
+Page: https://openweathermap.org/guide
+End point:api.openweathermap.org/data/2.5/weather?q=London,uk&appid={Your API Key}
 
-API_Key: 035eeec1dcf04686baf46df318753c67
+API_Key: 299f3fff0394893846ae1fe3432ca3f7s
