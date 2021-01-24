@@ -1,0 +1,14 @@
+{
+  "name": "api-instance",
+  "version": "1.0.0",
+  "description": "Simple API request to the Europeana database",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Damilare",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

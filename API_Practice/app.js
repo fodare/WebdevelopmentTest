@@ -2,8 +2,10 @@ const express = require("express");
 const { write } = require("fs");
 const bodyParser = require("body-parser");
 const https = require("https"); // For making a https request
+const request = require("request");
 
 const app = express();
+app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", function (req, res) {
@@ -21,8 +23,10 @@ app.post("/", function (req, res) {
       appkey +
       "&units=" +
       mearsurement;
+
    https.get(url, function (response) {
       console.log(response.statusCode);
+
       response.on("data", function (data) {
          weather_data = JSON.parse(data);
          temp = weather_data.main.temp;
@@ -37,7 +41,6 @@ app.post("/", function (req, res) {
          res.write(
             `<h1>The temprature in ${query}, DE is ${temp} degree(s)</h1>`
          );
-
          res.write("<img src= " + imageURL + ">");
          res.send();
       });

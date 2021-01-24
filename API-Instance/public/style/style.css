@@ -1,0 +1,16 @@
+body {
+   box-sizing: border-box;
+   background-color: lightgray;
+   text-align: center;
+}
+.heading {
+   padding-top: 100px;
+   line-height: 2;
+}
+.search {
+   margin-top: 40px;
+}
+
+button {
+   margin-top: 20px;
+}

@@ -1,0 +1,3 @@
+API Name = Advice Slip
+Page = https://api.adviceslip.com
+End-point: Can be found on the documentation page
