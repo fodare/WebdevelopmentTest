@@ -1,16 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-function Card(props) {
-   return (
-      <div>
-         <h2>{props.name}</h2>
-         <img src={props.img} alt="avatar_img" />
-         <p>{props.tel}</p>
-         <p>{props.email}</p>
-      </div>
-   );
-}
+import Card from "./components/Card";
 
 ReactDOM.render(
    <div>
@@ -34,6 +24,13 @@ ReactDOM.render(
          img="https://i.pinimg.com/originals/e3/94/47/e39447de921955826b1e498ccf9a39af.png"
          tel="+1234501"
          email="chuckisNorries@gmail.com"
+      />
+
+      <Card
+         name="Damilare Olatunbosun"
+         img="https://avatars.githubusercontent.com/u/41299452?v=4"
+         tel="+49-12343545"
+         email="jibrilisaboy@gmail.com"
       />
    </div>,
    document.getElementById("root")
