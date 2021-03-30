@@ -21,7 +21,6 @@ function App() {
          <ContactCard
             name={contacts[2].name}
             img={contacts[2].imgURL}
-            tel={contacts[2].phone}
             email={contacts[2].email}
          />
       </div>
