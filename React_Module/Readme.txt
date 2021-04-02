@@ -9,3 +9,14 @@ To Create React app.
 3: After designing and editting. Build the app by running the command below :
  => npm build
 
+
+4: Destructring of an array can be done like so
+	Sample object = const animals = [
+   { name: "cat", sound: "meow" },
+   { name: "dog", sound: "woof" },
+];
+
+destructring would look like so: 
+	const destructuredArray [cat, dog] = animals
+	// doing this the contents of the first object is assigned to cat and the second
+		is assigned to dog
